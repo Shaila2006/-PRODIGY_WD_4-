@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #20002c, #cbb4d4);
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 10px;
+      z-index: 999;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about, .projects {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 40px;
+      margin-top: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: url('https://via.placeholder.com/120') center/cover no-repeat;
+      margin: 20px auto;
+    }
+
+    .projects ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0,0,0,0.3);
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hi, I'm [sukeerthana]</h1>
+    <div class="photo"></div>
+    <p>Web Developer | Problem Solver | Tech Enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <div class="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate web developer with a background in computer science. I specialize in building modern and responsive web applications using HTML, CSS, JavaScript, and popular frameworks.
+        My goal is to create seamless user experiences and bring ideas to life through code.
+      </p>
+      <p>
+        <strong>Education:</strong><br/>
+        B.Tech in Computer Science (AIML)<br/>
+         Geethanjali College Of Engineering & Technology , 2023
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Personal Portfolio:</strong> This website showcasing my skills and journey.</li>
+        <li><strong>Tic-Tac-Toe Game:</strong> A fun, interactive game built with JavaScript.</li>
+        <li><strong>Stopwatch App:</strong> Time-tracking app with start, stop, and reset functionality.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="about">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:your.email@example.com" style="color: #00ffff;">your.email@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank" style="color: #00ffff;">github.com/yourusername</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" style="color: #00ffff;">linkedin.com/in/yourprofile</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 [sukeerthana]. All rights reserved.
+  </footer>
+
+  <script>
+    // Optional interactivity (e.g., smooth scroll highlight)
+    const navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.forEach(l => l.classList.remove("active"));
+        link.classList.add("active");
+      });
+    });
+  </script>
+</body>
+</html>
